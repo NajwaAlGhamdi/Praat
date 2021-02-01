@@ -1,3 +1,5 @@
+
+# adapted from https://joeystanley.com/blog/a-tutorial-on-extracting-formants-in-praat
 writeInfoLine: "Extracting formants..."
 
 # Extract the names of the Praat objects
@@ -19,7 +21,7 @@ select Sound 'thisSound$'
 		To Intensity... 75 0
 
 # Create the output file and write the first line.
-outputPath$ = "/Users/najwaghamdi/desktop/formants.csv"
+outputPath$ = "/formants.csv"
 writeFileLine: "'outputPath$'", "file,time,phoneme,F1,F2,F3,F0,intesity"
 
 # Loop through each interval on the phoneme tier.
